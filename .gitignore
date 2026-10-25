@@ -1,0 +1,45 @@
+# ── Dependencies ──────────────────────────────────────────────────────────────
+node_modules/
+
+# ── Build output ──────────────────────────────────────────────────────────────
+dist/
+build/
+
+# ── Environment variables — NEVER commit secrets ──────────────────────────────
+.env
+.env.local
+.env.*.local
+# .env.example is intentionally NOT ignored — it contains only variable names
+
+# ── Circle credentials — sensitive, never commit ──────────────────────────────
+.circle/
+
+# ── Foundry build artifacts ───────────────────────────────────────────────────
+contracts/out/
+contracts/cache/
+
+# ── Vercel deployment state ───────────────────────────────────────────────────
+.vercel/
+
+# ── Runtime log and trace files (Arc Studio sandbox output) ───────────────────
+*.log
+/tmp/
+console.jsonl
+traces.jsonl
+cache/
+
+# ── Arc Studio internal plans (not part of the project source) ────────────────
+arc-studio-plans/
+
+# ── OS files ──────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# ── Editor ────────────────────────────────────────────────────────────────────
+.vscode/settings.json
+.idea/
+
+# ── Bun internal ──────────────────────────────────────────────────────────────
+bun.lockb
